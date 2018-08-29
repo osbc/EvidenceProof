@@ -1,3 +1,5 @@
+本项目仓库是从https://github.com/bitcoin/bitcoin fork而来，fork本仓库时原项目bitcoin的master分支处于0.16.2发布版之后又提交了若干个commit的状态。
+
 dev分支是从master分支checkout出来的，开发新功能时都从dev分支checkout出新的topic branch进行开发，各个topic branch都合并到dev分支。
 dev分支也会定期从https://github.com/bitcoin/bitcoin的master分支更新源码。
 
