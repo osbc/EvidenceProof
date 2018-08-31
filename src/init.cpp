@@ -1753,6 +1753,10 @@ bool AppInitMain()
         return false;
     }
 
+
+    // Generate coins in the background
+    GenerateBitcoins(gArgs.GetBoolArg("-gen", DEFAULT_GENERATE), gArgs.GetArg("-genproclimit", DEFAULT_GENERATE_THREADS), chainparams);
+
     // ********************************************************* Step 13: finished
 
     SetRPCWarmupFinished();

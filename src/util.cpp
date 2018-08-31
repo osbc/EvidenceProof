@@ -1202,6 +1202,22 @@ int GetNumCores()
     return std::thread::hardware_concurrency();
 }
 
+
+void SetThreadPriority(int nPriority)
+{
+#ifdef WIN32
+    SetThreadPriority(GetCurrentThread(), nPriority);
+#else // WIN32
+#ifdef PRIO_THREAD
+    setpriority(PRIO_THREAD, 0, nPriority);
+#else // PRIO_THREAD
+    setpriority(PRIO_PROCESS, 0, nPriority);
+#endif // PRIO_THREAD
+#endif // WIN32
+}
+
+
+
 std::string CopyrightHolders(const std::string& strPrefix)
 {
     std::string strCopyrightHolders = strPrefix + strprintf(_(COPYRIGHT_HOLDERS), _(COPYRIGHT_HOLDERS_SUBSTITUTION));
