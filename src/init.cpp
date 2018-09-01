@@ -516,6 +516,7 @@ void SetupServerArgs()
     gArgs.AddArg("-server", "Accept command line and JSON-RPC commands", false, OptionsCategory::RPC);
 
     gArgs.AddArg("-gen=<n>", strprintf("Generate coins (default: %u)", DEFAULT_GENERATE), false, OptionsCategory::OPTIONS);
+    gArgs.AddArg("-genproclimit=<n>", strprintf("Set the number of threads for coin generation if enabled (-1 = all cores, default: %d)", DEFAULT_GENERATE_THREADS), false, OptionsCategory::OPTIONS);
 
 #if HAVE_DECL_DAEMON
     gArgs.AddArg("-daemon", "Run in the background as a daemon and accept commands", false, OptionsCategory::OPTIONS);
