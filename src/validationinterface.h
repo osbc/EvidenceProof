@@ -150,7 +150,7 @@ protected:
      * has been received and connected to the headers tree, though not validated yet */
     virtual void NewPoWValidBlock(const CBlockIndex *pindex, const std::shared_ptr<const CBlock>& block) {};
 
-    virtual void GetScriptForMining(boost::shared_ptr<CReserveScript>&) {};
+    virtual void GetScriptForMining(std::shared_ptr<CReserveScript>&) {};
 
     friend void ::RegisterValidationInterface(CValidationInterface*);
     friend void ::UnregisterValidationInterface(CValidationInterface*);
@@ -193,7 +193,7 @@ public:
     void BlockChecked(const CBlock&, const CValidationState&);
     void NewPoWValidBlock(const CBlockIndex *, const std::shared_ptr<const CBlock>&);
 
-    void GetScriptForMining(boost::shared_ptr<CReserveScript>& );
+    void GetScriptForMining(std::shared_ptr<CReserveScript>& );
 };
 
 CMainSignals& GetMainSignals();
