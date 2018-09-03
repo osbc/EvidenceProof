@@ -29,7 +29,7 @@ struct MainSignalsInstance {
     boost::signals2::signal<void (const CBlockIndex *, const std::shared_ptr<const CBlock>&)> NewPoWValidBlock;
 
     /** Notifies listeners that a key for mining is required (coinbase) */
-    boost::signals2::signal<void (boost::shared_ptr<CReserveScript>&)> ScriptForMining;
+    boost::signals2::signal<void (std::shared_ptr<CReserveScript>&)> ScriptForMining;
 
     // We are not allowed to assume the scheduler only runs in one thread,
     // but must ensure all callbacks happen in-order, so we end up creating
@@ -188,7 +188,7 @@ void CMainSignals::NewPoWValidBlock(const CBlockIndex *pindex, const std::shared
 }
 
 
-void CMainSignals::GetScriptForMining(boost::shared_ptr<CReserveScript>& script) {
+void CMainSignals::GetScriptForMining(std::shared_ptr<CReserveScript>& script) {
     m_internals->ScriptForMining(script);
 };
 
