@@ -1,3 +1,5 @@
+简介
+
 本项目仓库是从 https://github.com/bitcoin/bitcoin fork而来，fork本仓库时原项目bitcoin的master分支处于Bitcoin Core的0.16.2发布版之后又提交了若干个commit的状态，master分支的具体commit号是0df9b0aed23127acd12d9ed6a008c12be47b1cd9。
 
 本项目的dev分支是从master分支checkout出来的，开发新功能时都从dev分支checkout出新的topic branch进行开发，各个topic branch都合并到dev分支。
