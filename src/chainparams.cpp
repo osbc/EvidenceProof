@@ -81,12 +81,22 @@ public:
         consensus.BIP65Height = 388381; // 000000000000000004c2b624ed5d7756c508d90fd0da2c7c679febfa6c4735f0
         consensus.BIP66Height = 363725; // 00000000000000000379eaa19dce8c9b722d46ae6a57c2f1a988119488b50931
         consensus.powLimit = uint256S("00000000ffffffffffffffffffffffffffffffffffffffffffffffffffffffff");
-        consensus.nPowTargetTimespan = 14 * 24 * 60 * 60; // two weeks
-        consensus.nPowTargetSpacing = 10 * 60;
+/*        consensus.nPowTargetTimespan = 14 * 24 * 60 * 60; // two weeks
+        consensus.nPowTargetSpacing = 10 * 60;*/
+
+        //存证平台的难度调整参数
+        consensus.nPowTargetTimespan = 5 * 24 * 60 * 60; // 5 days
+        consensus.nPowTargetSpacing = 5 * 60;//5 minutes
+
         consensus.fPowAllowMinDifficultyBlocks = false;
         consensus.fPowNoRetargeting = false;
-        consensus.nRuleChangeActivationThreshold = 1916; // 95% of 2016
-        consensus.nMinerConfirmationWindow = 2016; // nPowTargetTimespan / nPowTargetSpacing
+/*        consensus.nRuleChangeActivationThreshold = 1916; // 95% of 2016
+        consensus.nMinerConfirmationWindow = 2016; // nPowTargetTimespan / nPowTargetSpacing*/
+
+        //存证平台的参数
+        consensus.nRuleChangeActivationThreshold = 0.95 * (consensus.nPowTargetTimespan / consensus.nPowTargetSpacing); // 95% of 2016
+        consensus.nMinerConfirmationWindow = (consensus.nPowTargetTimespan / consensus.nPowTargetSpacing); // nPowTargetTimespan / nPowTargetSpacing
+
         consensus.vDeployments[Consensus::DEPLOYMENT_TESTDUMMY].bit = 28;
         consensus.vDeployments[Consensus::DEPLOYMENT_TESTDUMMY].nStartTime = 1199145601; // January 1, 2008
         consensus.vDeployments[Consensus::DEPLOYMENT_TESTDUMMY].nTimeout = 1230767999; // December 31, 2008
