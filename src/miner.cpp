@@ -604,6 +604,7 @@ void static BitcoinMiner(const CChainParams& chainparams)
                 // Check if something found
                 if (ScanHash(pblock, nNonce, &hash))
                 {
+                    LogPrint(BCLog::MINER, "nNonce=%s, hash=%s, UintToArith256(hash)=%s, hashTarget=%s\n", nNonce, hash.ToString(), UintToArith256(hash).ToString(), hashTarget.ToString());
                     if (UintToArith256(hash) <= hashTarget)
                     {
                         // Found a solution
