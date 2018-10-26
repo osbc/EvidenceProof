@@ -16,9 +16,9 @@ git clone https://github.com/osbc/EvidenceProof.git
 
 2.进入EvidenceProof目录，然后切换到dev分支：
 
-cd EvidenceProof
+  cd EvidenceProof
 
-git checkout -b dev origin/dev
+  git checkout -b dev origin/dev
 
 3.编译安装安装Bitcoin
 
