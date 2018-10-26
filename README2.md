@@ -15,6 +15,7 @@ master分支作为本项目的版本发布分支，始终与线上的版本是�
 git clone https://github.com/osbc/EvidenceProof.git
 
 2.进入EvidenceProof目录，然后切换到dev分支：
+
 cd EvidenceProof
 
 git checkout -b dev origin/dev
@@ -43,9 +44,9 @@ git checkout -b dev origin/dev
   
       (1)安装libssl, libevent, libboost库等
       
-        sudo apt-get install build-essential libtool autotools-dev automake pkg-config libssl-dev libevent-dev bsdmainutils
+      sudo apt-get install build-essential libtool autotools-dev automake pkg-config libssl-dev libevent-dev bsdmainutils
         
-        sudo apt-get install libboost-system-dev libboost-filesystem-dev libboost-chrono-dev libboost-program-options-dev libboost-test-dev libboost-thread-dev
+      sudo apt-get install libboost-system-dev libboost-filesystem-dev libboost-chrono-dev libboost-program-options-dev libboost-test-dev libboost-thread-dev
 
 
       (2)通过添加仓库安装BerkeleyDB
@@ -77,6 +78,7 @@ git checkout -b dev origin/dev
 
    3) 编译安装EvidenceProof
      先进入EvidenceProof目录，然后执行：  
+     
      ./autogen.sh
      
      ./configure
