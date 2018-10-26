@@ -98,7 +98,7 @@ git clone https://github.com/osbc/EvidenceProof.git
 
 6.修改bitcoin.conf文件，利用 addnode=ip 选项分别在各个服务器上的bitcoin.conf文件中加入其他节点服务器的ip
 
-7.在每台节点服务器上执行bitcoind命令，自动组成区块链网络
+7.在每台节点服务器上执行bitcoind命令，这些服务器会自动组成区块链网络
 
 
 
