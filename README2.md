@@ -92,11 +92,9 @@ git clone https://github.com/osbc/EvidenceProof.git
    
 4.在当前用户目录下新建.bitcoin目录
 
-5.进入.bitcoin目录，下载 https://github.com/osbc/EvidenceProof/blob/dev/conf/bitcoin.conf 文件
-
-  cd /root/.bitcoin
+5.进入.bitcoin目录，新建 bitcoin.conf 文件，然后在 bitcoin.conf 文件中新增下面文件中内容 ：
   
-  wget https://github.com/osbc/EvidenceProof/blob/dev/conf/bitcoin.conf
+  https://github.com/osbc/EvidenceProof/blob/dev/conf/bitcoin.conf
 
 6.利用 addnode=ip 选项在bitcoin.conf文件中加入其他节点服务器
 
