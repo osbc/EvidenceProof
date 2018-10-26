@@ -58,14 +58,17 @@ git clone https://github.com/osbc/EvidenceProof.git
       sudo apt-get update
       
       sudo apt-get install libdb4.8-dev libdb4.8++-dev
+      
     
       (3)安装UPnP库:
       
       sudo apt-get install libminiupnpc-dev
       
+      
       (4)安装ZMQ库
       
       sudo apt-get install libzmq3-dev
+      
          
       (5)安装QT5库
       
