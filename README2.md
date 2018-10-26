@@ -16,6 +16,7 @@ git clone https://github.com/osbc/EvidenceProof.git
 
 2.进入EvidenceProof目录，然后切换到dev分支：
 cd EvidenceProof
+
 git checkout -b dev origin/dev
 
 3.编译安装安装Bitcoin
@@ -50,8 +51,11 @@ git checkout -b dev origin/dev
       (2)通过添加仓库安装BerkeleyDB
       
       sudo apt-get install software-properties-common
+      
       sudo add-apt-repository ppa:bitcoin/bitcoin
+      
       sudo apt-get update
+      
       sudo apt-get install libdb4.8-dev libdb4.8++-dev
     
       (3)安装UPnP库:
@@ -74,8 +78,11 @@ git checkout -b dev origin/dev
    3) 编译安装EvidenceProof
      先进入EvidenceProof目录，然后执行：  
      ./autogen.sh
+     
      ./configure
+     
      make
+     
      make install
    
 4.在当前用户目录下新建.bitcoin目录
