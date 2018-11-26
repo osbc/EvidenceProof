@@ -22,7 +22,7 @@ git clone https://github.com/osbc/EvidenceProof.git
 
 3.编译安装安装Bitcoin
 
-  1) 先替换/etc/apt/sources.list这份apt-get的源文件，否则在后续安装依赖包时有些依赖包会提示找不到
+  1) 先替换/etc/apt/sources.list这份apt-get的源文件，否则在后续安装依赖包时有些依赖包会提示找不到(这一步不是必须的，如果后面能正常安装依赖包就不需要做这一步操作了)
   
      (1)原文件备份为sources.list.bak
      
