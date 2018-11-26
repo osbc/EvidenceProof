@@ -100,6 +100,7 @@ git clone https://github.com/osbc/EvidenceProof.git
 
 7.在每台节点服务器上执行bitcoind命令，这些服务器会自动组成区块链网络
 
+8.在每台服务器上执行 bitcoin-cli createwallet customerwallet 命令创建账户转账用的钱包
 
 
 
