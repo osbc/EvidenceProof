@@ -10,7 +10,9 @@ master分支作为本项目的版本发布分支，始终与线上的版本是�
 
 
 部署
+
 (一)以下操作是在Ubuntu 18.04上进行的
+
 1.进入用户目录下，执行git clone命令下载Bitcoin源码:
 git clone https://github.com/osbc/EvidenceProof.git
 
