@@ -10,7 +10,7 @@ master分支作为本项目的版本发布分支，始终与线上的版本是�
 
 
 部署
-
+(一)以下操作是在Ubuntu 18.04上进行的
 1.进入用户目录下，执行git clone命令下载Bitcoin源码:
 git clone https://github.com/osbc/EvidenceProof.git
 
@@ -103,4 +103,4 @@ git clone https://github.com/osbc/EvidenceProof.git
 8.在每台服务器上执行 bitcoin-cli createwallet customerwallet 命令创建账户转账用的钱包
 
 
-
+(二)以下操作是在Centos上进行的
