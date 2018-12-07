@@ -104,5 +104,7 @@ git clone https://github.com/osbc/EvidenceProof.git
 
 8.在每台服务器上执行 bitcoin-cli createwallet customerwallet 命令创建账户转账用的钱包
 
+9.在每台服务器上执行 bitcoin-cli loadwallet customerwallet 命令以加载钱包
+
 
 (二)以下操作是在Centos上进行的
